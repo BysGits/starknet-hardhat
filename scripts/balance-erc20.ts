@@ -8,7 +8,7 @@ async function main() {
     const privateKey =
         "0x189319015665933196653334217366076354013949034844833818116353818416794168361";
     const starkKeyPair = ec.getKeyPair(privateKey);
-    const accountAddress = "0x27e53f7278ad33f592b320c65f4b0ebcb029dc04025120e315232c2ebab2cc0";
+    const accountAddress = "0x44d89e94f5d7a289b7fb2233f2ab295dc03259a38d3decc81e8b4c1618d4776";
 
     const account0 = new Account(provider, accountAddress, starkKeyPair);
 

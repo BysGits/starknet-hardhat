@@ -54,7 +54,7 @@ async function main() {
         name: hardhat.starknet.shortStringToBigInt("Test"),
         symbol: hardhat.starknet.shortStringToBigInt("Test"),
         decimals: 18,
-        initial_supply: { low: 1000, high: 0 },
+        initial_supply: { low: "100000000000000000000000", high: 0 },
         recipient: account.address,
         owner: account0.address
     });

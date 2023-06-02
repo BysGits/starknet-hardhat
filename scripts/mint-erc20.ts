@@ -37,7 +37,7 @@ async function main() {
     );
 
     // Mint 1000 tokens to account address
-    const amountToMint = uint256.bnToUint256("100000000000000000000");
+    const amountToMint = uint256.bnToUint256("1000000000000000000000");
     const { transaction_hash: mintTxHash } = await erc20.mint(account0.address, amountToMint, {
         maxFee: 900_000_000_000_000
     });
