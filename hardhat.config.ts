@@ -31,7 +31,7 @@ const config: HardhatUserConfig = {
                 accountPath: "~/.starknet_accounts"
             }
         },
-        requestTimeout: 300_000 // ms
+        requestTimeout: 900_000 // ms
     },
     networks: {
         testnet: {

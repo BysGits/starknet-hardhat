@@ -16,7 +16,11 @@ async function main() {
     const balanceETH = await hardhat.starknet.getBalance(account0.address);
     console.log(`Account ${account0.address} has a balance of ${balanceETH} wei`);
 
-    const routerAddress = "0x02bcc885342ebbcbcd170ae6cafa8a4bed22bb993479f49806e72d96af94c965";
+    // const routerAddress = "0x02bcc885342ebbcbcd170ae6cafa8a4bed22bb993479f49806e72d96af94c965";
+    const routerAddress = process.env.PROXY_ROUTER_ADDRESS;
+    if (routerAddress === undefined) {
+        throw new Error("require router");
+    }
 
     const amountIn: uint256.Uint256 = uint256.bnToUint256("120000000000000000");
     const amountOutMin: uint256.Uint256 = uint256.bnToUint256("0");
